@@ -9,121 +9,283 @@
     <script src="tailwind.js"></script>
   </head>
 
-  <body class="bg-white text-gray-900">
-
-    <!-- Header -->
-    <header class="absolute top-0 left-0 w-full z-20">
-      <div class="container mx-auto px-6 py-5 flex justify-between items-center">
-
-        <!-- Logo -->
-        <a href="#">
-          <img-
-            src="image.png"
-            alt="Cargo Freight Logistics Ltd. logo"
-            class="h-12 w-auto"
+  <body class="min-h-screen bg-[#f1f1f1] text-gray-900">
+    <header
+      class="mt-[12px] mx-[6px] h-[53px] border-2 border-[#0d99ff] bg-white"
+    >
+      <div class="flex h-full items-center justify-between">
+        <a
+          href="#"
+          class="ml-[20px] shrink-0"
+          aria-label="Cargo Freight Logistics home"
+        >
+          <img
+            src="./image.png"
+            class="h-[30px] w-[45px] object-contain"
+            alt="Cargo Freight Logistics logo"
           />
         </a>
 
-        <!-- Navigation -->
-        <nav>
-          <ul class="flex items-center space-x-8 text-white font-medium">
+        <nav class="pr-[22px]" aria-label="Main navigation">
+          <ul
+            class="flex items-center gap-[17px] text-[12px] ormal text-[#222]"
+          >
             <li>
-              <a href="#" class="hover:text-red-400 transition duration-300">
-                Home
-              </a>
+              <a href="index.html" class="whitespace-nowrap hover:text-[#0d99ff]"
+                >Home</a
+              >
             </li>
-
             <li>
-              <a href="#" class="hover:text-red-400 transition duration-300">
-                About
-              </a>
+              <a href="About.html" class="whitespace-nowrap hover:text-[#0d99ff]"
+                >About</a
+              >
             </li>
-
             <li>
-              <a href="#" class="hover:text-red-400 transition duration-300">
-                Services
-              </a>
+              <a href="#" class="whitespace-nowrap hover:text-[#0d99ff]"
+                >Services</a
+              >
             </li>
-
             <li>
-              <a href="#" class="hover:text-red-400 transition duration-300">
-                Contact
-              </a>
+              <a href="#" class="whitespace-nowrap hover:text-[#0d99ff]"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
-
       </div>
     </header>
 
-
-    <!-- Hero Section -->
     <main>
-
       <section
-        class="relative min-h-screen flex items-center bg-cover bg-center"
+        class="relative mx-[20px] mt-[21px] h-[209px] overflow-hidden bg-cover bg-center"
         style="
-          background-image: url('./16e0010ae58db5f03e4ecc4aa14f42e6558804d8%20(1).jpg');
+          background-image: url(&quot;./16e0010ae58db5f03e4ecc4aa14f42e6558804d8%20(1).jpg&quot;);
         "
       >
+        <div class="absolute inset-0 bg-black/45"></div>
 
-        <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black/65"></div>
+        <div class="absolute left-[32px] top-[12px] text-white">
+          <h1 class="text-[38px] font-normal leading-[0.9]">
+            Welcome To<br />
+            Cargo Freight<br />
+            Logistics Ltd..
+          </h1>
+        </div>
 
-        <!-- Optional subtle gradient -->
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"
-        ></div>
-
-        <!-- Hero Content -->
-        <div class="container mx-auto px-6 relative z-10">
-
-          <div class="max-w-3xl text-white">
-
-            <p class="text-red-500 uppercase tracking-[0.3em] font-semibold mb-4">
-              Reliable • Fast • Global
-            </p>
-
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Welcome To
-            </h1>
-
-            <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Cargo Freight
-              <span class="text-red-500">Logistics Ltd.</span>
-            </h2>
-
-            <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mb-8">
-              Your trusted partner for efficient freight forwarding,
-              transportation, and logistics solutions. We move your cargo
-              safely, securely, and on time.
-            </p>
-
-            <!-- Buttons -->
-            <div class="flex flex-wrap gap-4">
-
-              <a
-                href="#"
-                class="inline-block bg-[#EA2F2F] text-white px-7 py-3 rounded-md font-semibold hover:bg-red-700 transition duration-300 shadow-lg"
-              >
-                Request Quote
-              </a>
-
-              <a
-                href="#"
-                class="inline-block border border-white text-white px-7 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition duration-300"
-              >
-                Learn More
-              </a>
-
-            </div>
-
-          </div>
-
+        <div class="absolute bottom-[19px] left-[27px] flex gap-[8px]">
+          <a
+            href="#"
+            class="inline-flex h-[27px] items-center justify-center bg-[#ff3b30] px-[8px] text-[11px] font-normal leading-none text-white hover:bg-[#e52d24]"
+          >
+            Request Quotes
+          </a>
+          <a
+            href="#"
+            class="inline-flex h-[27px] items-center justify-center bg-[#ff3b30] px-[8px] text-[11px] font-normal leading-none text-white hover:bg-[#e52d24]"
+          >
+            learn more
+          </a>
         </div>
       </section>
-
     </main>
+    <section class="text-center mt-[20px]">
+      <h1 class="text-3xl font-bold">Service Offerings</h1>
 
+      <h3 class="text-2xl font-bold pt-4">
+        Providers moves item from the supplier to the <br />
+        buyers safely
+      </h3>
+    </section>
+    <section class="pt-10 px-50 space-y-10">
+      <div class="flex justify-center items-start gap-5">
+        <div class="flex flex-col">
+          <img
+            src="./968a6b1291f5f48e5ba8eb145f876b29399d6123 (4).jpg"
+            alt=""
+            width="300"
+            height="500"
+          />
+          <h2
+            style="
+              font-family: Inter;
+              font-weight: 700;
+              font-style: Bold;
+              font-size: 32px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            International air freight
+          </h2>
+          <p
+            style="
+              font-family: Inter;
+              font-weight: 700;
+              font-style: Bold;
+              font-size: 24px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            Fastest way to ship across <br />
+            borders
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <img
+            src="./94e708ed85206f0f5c6ab2611f4faa5fb837dd9f (1).jpg"
+            alt=""
+            width="300"
+            height="500"
+          />
+          <h2
+            style="
+              font-family: Inter;
+              font-weight: 700;
+              font-style: Bold;
+              font-size: 32px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            Sea freight
+          </h2>
+          <p
+            style="
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 24px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            Cost effective transports of large <br />
+            goods across ocean
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <img
+            src="c6a9a93cae50f1019dd4694e10a45c8e90acb56f.jpg"
+            alt="#"
+            width="300"
+            height="500"
+          />
+          <h3
+            style="
+              font-family: Inter;
+              font-weight: 700;
+              font-style: Bold;
+              font-size: 32px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            Road freight
+          </h3>
+          <p
+            style="
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 24px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            "
+          >
+            Move goods and cargo over land
+          </p>
+        </div>
+      </div>
+      <div style="max-width: 160px">
+        <a
+          href="#"
+          class="inline-flex h-[27px] items-center justify-center bg-[#ff3b30] px-[8px] text-[11px] font-bold leading-none text-white hover:bg-[#e52d24]"
+        >
+          Get started
+        </a>
+      </div>
+    </section>
+
+    <section class="text-center mt-[40px] mb-[40px]">
+      <h1 class="text-3xl font-bold">Global Network Reach</h1>
+      <h3>
+        Providers or alliances capacity to move goods seamlessly across
+        international borders <br />
+        connecting local suppliers to worldwide market.
+      </h3>
+    </section>
+    <div class="flex justify-center mt-[40px] mb-[40px]">
+      <img
+        src="./Frame 37.png"
+        alt="Global Network Reach"
+        class="w-[80%] h-auto"
+      />
+    </div>
+
+    <footer class="mt-[80px] bg-white px-8 py-16 text-[#666] md:px-16 lg:px-[120px]">
+      <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1.35fr_0.8fr] lg:gap-16">
+        <div>
+          <div class="flex items-center gap-6">
+            <img
+              src="./Logo Icon (3).png"
+              class="h-24 w-24"
+              alt="Cargo Freight Logistics logo"
+            />
+            <div class="text-[36px] font-bold leading-none text-[#1d1d1d]">
+              <span class="block">CARGO FREIGHT</span>
+              <span class="mt-3 block text-[24px] font-normal tracking-[3px] text-[#ffb52e]"
+                >LOGISTICS LTD.</span
+              >
+            </div>
+          </div>
+          <p class="mt-12 max-w-[460px] text-[26px] leading-[1.55]">
+            Moving goods safely and seamlessly across borders, connecting local
+            suppliers to the global marketplace.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-[32px] font-bold text-[#1d1d1d]">HEADQUARTERS</h2>
+          <address class="mt-8 text-[26px] not-italic leading-[1.8]">
+            123 Logistics Avenue,<br />
+            Suite 400<br />
+            New York, NY 10001
+          </address>
+        </div>
+
+        <div>
+          <h2 class="text-[32px] font-bold text-[#1d1d1d]">DISPATCH &amp; SUPPORT</h2>
+          <dl class="mt-8 space-y-6 text-[26px]">
+            <div>
+              <dt class="font-bold text-[#3564df]">PHONE SUPPORT</dt>
+              <dd><a href="tel:+18005000199" class="text-[#1d1d1d] hover:text-[#3564df]">+1 800-500-0199</a></dd>
+            </div>
+            <div>
+              <dt class="font-bold text-[#3564df]">EMAIL SUPPORT</dt>
+              <dd><a href="mailto:support@cargofreight.com" class="text-[#1d1d1d] hover:text-[#3564df]">support@cargofreight.com</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div>
+          <h2 class="text-[32px] font-bold text-[#1d1d1d]">LINKS</h2>
+          <nav class="mt-8" aria-label="Footer navigation">
+            <ul class="space-y-5 text-[26px]">
+              <li><a href="#" class="hover:text-[#3564df]">Track Shipment</a></li>
+              <li><a href="#" class="hover:text-[#3564df]">Request a Quote</a></li>
+              <li><a href="#" class="hover:text-[#3564df]">Service Areas</a></li>
+              <li><a href="#" class="hover:text-[#3564df]">Client Portals</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
   </body>
 </html>
